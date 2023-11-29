@@ -30,7 +30,8 @@ public class Banco {
 
 	/*Método Then (Deve efetuar o saque e atualizar o saldo da conta para -{int} reais)*/
 	@Then("Deve efetuar o saque e atualizar o saldo da conta para -{int} reais")
-	public void deve_efetuar_o_saque_e_atualizar_o_saldo_da_conta_para_reais(int arg1) throws Throwable {
+	public void deve_efetuar_o_saque_e_atualizar_o_saldo_da_conta_para_reais(int arg1)
+	throws Throwable {
 		if (saldo == arg1) {
 			System.out.println("Saldo realizado com sucesso!");
 			System.out.println("Saldo atual: " + saldo);
